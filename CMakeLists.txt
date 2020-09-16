@@ -8,3 +8,7 @@ find_package(SDL2 CONFIG REQUIRED)
 
 add_executable(Chip-8 
 	src/main.cpp)
+	
+target_link_libraries(Chip-8 PRIVATE
+	SDL2::SDL2
+	SDL2::SDL2main)
